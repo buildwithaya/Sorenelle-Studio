@@ -1,0 +1,1942 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SORENELLE — Aesthetic Digital Planners & Mindful Journals</title>
+  <meta name="description"
+    content="A gentle sanctuary for mindful digital planners, aesthetic journals, and intentional templates designed to organize your days with ease and beauty.">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=10">
+
+  <style>
+    /* High-Priority Instant Custom Request Checkbox & Button Styles */
+    .custom-checkbox-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
+      gap: 10px !important;
+    }
+
+    .custom-checkbox-item {
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      padding: 12px 16px !important;
+      background: #FAF7F2 !important;
+      border: 1.5px solid #E2D9D0 !important;
+      border-radius: 14px !important;
+      cursor: pointer !important;
+      transition: all 0.18s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+      user-select: none !important;
+      position: relative !important;
+      box-sizing: border-box !important;
+      outline: none !important;
+    }
+
+    .custom-checkbox-item:hover {
+      background: #FFFFFF !important;
+      border-color: #D89597 !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 4px 14px rgba(216, 149, 151, 0.18) !important;
+    }
+
+    .custom-checkbox-item:focus-visible {
+      border-color: #D89597 !important;
+      box-shadow: 0 0 0 3px rgba(216, 149, 151, 0.3) !important;
+    }
+
+    .custom-checkbox-item:active {
+      transform: scale(0.97) !important;
+    }
+
+    .custom-checkbox-item.is-checked {
+      background: #FFFFFF !important;
+      border-color: #D89597 !important;
+      border-width: 2px !important;
+      box-shadow: 0 4px 16px rgba(216, 149, 151, 0.26) !important;
+    }
+
+    .custom-check-box {
+      width: 22px !important;
+      height: 22px !important;
+      border-radius: 6px !important;
+      border: 1.8px solid #5C4A3E !important;
+      background: #FFFFFF !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-shrink: 0 !important;
+      transition: all 0.18s ease !important;
+      pointer-events: none !important;
+    }
+
+    .custom-checkbox-item.is-checked .custom-check-box {
+      background: #D89597 !important;
+      border-color: #D89597 !important;
+      box-shadow: 0 2px 8px rgba(216, 149, 151, 0.45) !important;
+    }
+
+    .custom-check-box svg {
+      width: 14px !important;
+      height: 14px !important;
+      stroke: #FFFFFF !important;
+      display: none;
+      opacity: 0;
+      pointer-events: none !important;
+      transition: transform 0.18s ease !important;
+    }
+
+    .custom-checkbox-item.is-checked .custom-check-box svg {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      stroke: #FFFFFF !important;
+    }
+
+    .custom-check-input {
+      position: absolute !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      width: 1px !important;
+      height: 1px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .custom-check-label {
+      font-size: 0.88rem !important;
+      font-weight: 600 !important;
+      color: #382A24 !important;
+      pointer-events: none !important;
+      line-height: 1.2 !important;
+    }
+
+    .custom-checkbox-item.is-checked .custom-check-label {
+      color: #261B15 !important;
+      font-weight: 700 !important;
+    }
+
+    .budget-chip.active {
+      background: #D89597 !important;
+      color: #FFFFFF !important;
+      border-color: #D89597 !important;
+      box-shadow: 0 3px 10px rgba(216, 149, 151, 0.35) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <div class="container announcement-content">
+      <span class="announcement-main">✨ SORENELLE BESPOKE: CUSTOM DIGITAL PLANNER &amp; TEMPLATES SESUAI REQUEST
+        KAMU</span>
+      <span class="announcement-sep" aria-hidden="true">•</span>
+      <span class="announcement-sub">DOWNLOAD INSTAN PDF &amp; GOODNOTES</span>
+    </div>
+  </aside>
+
+  <!-- Site Header & Navbar (Matching the requested reference) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="site-navbar" aria-label="Main Navigation">
+
+        <!-- Left: Brand Logo in Cursive Script -->
+        <a href="#home" class="brand-logo-wrap" id="brandLogo">
+          <div class="brand-logo-badge">
+            <span class="brand-cursive-logo">Sorenelle</span>
+            <span class="brand-tagline-mini">DIGITAL GOODS STUDIO</span>
+          </div>
+        </a>
+
+        <!-- Center: Navigation Links -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="#custom-studio" class="nav-link nav-link-featured" id="navLinkCustom"><span
+                class="nav-star-glow">✦</span> BESPOKE STUDIO</a></li>
+          <li><a href="#products" class="nav-link" id="navLinkShop">READY-MADE</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#typewriter" class="nav-link">LOVE NOTES</a></li>
+          <li><a href="#reviews" class="nav-link">REVIEWS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+
+        <!-- Right: Social Links & Utilities -->
+        <div class="nav-actions">
+
+          <!-- Social Icons (Circular outlined pills from reference) -->
+          <div class="social-links" aria-label="Social Channels">
+            <a href="https://www.instagram.com/yraya.ay?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+              target="_blank" rel="noreferrer" class="social-circle-btn" title="Instagram" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noreferrer" class="social-circle-btn" title="TikTok"
+              aria-label="TikTok">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+              </svg>
+            </a>
+          </div>
+
+          <span class="nav-divider" aria-hidden="true"></span>
+
+          <!-- Cart Drawer Button -->
+          <button class="action-icon-btn" id="cartOpenBtn" title="Shopping Bag" aria-label="Shopping Bag">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-count-badge" id="navCartCount">1</span>
+          </button>
+
+          <!-- Mobile Nav Toggle -->
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu-drawer" id="mobileMenuDrawer" style="display: none;">
+      <a href="#home" class="nav-link">HOME</a>
+      <a href="#custom-studio" class="nav-link" id="mNavLinkCustom" style="font-weight:700; color:#D89597;">✨ BESPOKE
+        STUDIO</a>
+      <a href="#products" class="nav-link" id="mNavLinkShop">SHOP READY-MADE</a>
+      <a href="#about" class="nav-link">ABOUT</a>
+      <a href="#typewriter" class="nav-link">LOVE NOTES</a>
+      <a href="#reviews" class="nav-link">REVIEWS</a>
+      <a href="#contact" class="nav-link">CONTACT</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section (Faithfully matching the user's reference image)
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-bloom" aria-hidden="true"></div>
+      <div class="hero-bg-bloom-left" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left Column: Emotional Poetic Typography & CTAs -->
+          <div class="hero-content">
+
+            <!-- Scalloped Lace Heart Badge -->
+            <div class="lace-heart-sticker">
+              <span class="lace-heart-icon">♥</span>
+              <span class="lace-heart-text">✦ Indonesia's 1st Bespoke Digital Goods Studio ✦</span>
+            </div>
+
+            <!-- Double Poetic Title with Serif + Script Pairing -->
+            <h1 class="hero-title">
+              <span class="title-line">A place made <span class="script-accent">of love,</span></span>
+              <span class="title-line">Crafted <span class="script-accent">for you</span></span>
+            </h1>
+
+            <!-- Gentle Brand Description -->
+            <p class="hero-description">
+              A serene digital sanctuary for mindful living. Wujudkan digital planner, template bisnis, dan jurnal
+              impianmu melalui layanan unggulan <strong>1-on-1 Bespoke Creation Studio</strong>, atau temukan koleksi
+              estetik siap pakai yang siap diunduh secara instan.
+            </p>
+
+            <!-- Dual Pill Action Buttons -->
+            <div class="hero-cta-group">
+              <a href="#custom-studio" class="btn-pill btn-pill-blush hero-main-custom-btn" id="heroCustomBtn">
+                <span class="btn-sparkle-star">✨</span>
+                <span>DESIGN YOUR CUSTOM PIECE</span>
+              </a>
+              <a href="#products" class="btn-pill btn-pill-outline" id="heroExploreBtn">
+                SHOP READY-MADE &darr;
+              </a>
+            </div>
+
+            <!-- Social Proof Bar -->
+            <div class="hero-social-proof">
+              <div class="stars-rating" aria-label="5 stars rating">★★★★★</div>
+              <div class="proof-text">
+                Loved by <strong>4,200+ mindful journalers</strong> &bull; Custom Orders &amp; Instant PDF Delivery
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Aesthetic Hero Visual Composition -->
+          <div class="hero-visual-wrapper">
+
+            <!-- Floating Decorative Badges -->
+            <div class="floating-tag floating-tag-top">
+              <span class="tag-dot"></span>
+              <span>✨ 1-on-1 Bespoke Orders Open</span>
+            </div>
+
+            <div class="floating-tag floating-tag-bottom">
+              <span>🌸 650+ Hyperlinked Pages &bull; GoodNotes Ready</span>
+            </div>
+
+            <!-- Main Aesthetic Collage Card with Tilt Effect -->
+            <div class="hero-main-card">
+              <img src="assets/hero_book_mockup.jpg?v=4"
+                alt="SORENELLE Aesthetic iPad Reading &amp; Pink Linen Journal Mockup" class="hero-main-img"
+                id="heroCollageImg">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Compatibility & Feature Ribbon -->
+    <section class="ribbon-section" aria-label="Compatible Applications">
+      <div class="container">
+        <div class="ribbon-flex">
+          <span class="ribbon-label">Compatible with your favorite apps:</span>
+          <div class="app-pill-list">
+            <span class="app-pill">📱 GoodNotes 5 &amp; 6</span>
+            <span class="app-pill">✍️ Notability</span>
+            <span class="app-pill">⚡ Notion</span>
+            <span class="app-pill">🖊️ Penly &amp; Samsung Notes</span>
+            <span class="app-pill">🍏 Apple Notes</span>
+            <span class="app-pill">🖨️ Printable PDF</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Bespoke Studio Spotlight Showcase (The Defining Signature of Sorenelle)
+         ========================================================================== -->
+    <section class="bespoke-spotlight-section" id="custom-spotlight">
+      <div class="container">
+        <div class="bespoke-spotlight-banner">
+          <div class="spotlight-header">
+            <span class="section-eyebrow">✦ SORENELLE SIGNATURE &bull; EXCLUSIVE BESPOKE SERVICE ✦</span>
+            <h2 class="spotlight-title">Tak Menemukan Layout yang Pas? <em>Kami Rancang Khusus untuk Kamu.</em></h2>
+            <p class="spotlight-subtitle">
+              Tidak perlu lagi berkompromi dengan template kaku yang tidak sesuai rutinitasmu. Di Sorenelle, kamu bebas
+              request digital planner, template bisnis, spreadsheet, hingga undangan personal dengan sentuhan estetika
+              mewah 1-on-1.
+            </p>
+          </div>
+
+          <div class="spotlight-pillars-grid">
+            <div class="spotlight-pillar-card">
+              <div class="pillar-icon-badge">📐</div>
+              <h4>100% Custom Layout &amp; Hyperlinks</h4>
+              <p>Tentukan sendiri struktur mingguan, jumlah halaman, tab navigasi GoodNotes, hingga tracker khusus
+                keuangan &amp; kebiasaanmu.</p>
+            </div>
+            <div class="spotlight-pillar-card">
+              <div class="pillar-icon-badge">🎨</div>
+              <h4>Estetika &amp; Palet Warna Personal</h4>
+              <p>Pilih warna favoritmu (soft pink, creamy beige, minimal mocha, atau vintage) dan kami sesuaikan dengan
+                gaya estetikamu.</p>
+            </div>
+            <div class="spotlight-pillar-card">
+              <div class="pillar-icon-badge">💬</div>
+              <h4>1-on-1 Desainer via WhatsApp</h4>
+              <p>Konsultasi santai dan ramah langsung dengan tim studio Sorenelle via WhatsApp resmi. Revisi fleksibel
+                hingga hasil akhir memuaskan hatimu.</p>
+            </div>
+          </div>
+
+          <div class="spotlight-cta-bar">
+            <a href="#custom-studio" class="btn-pill btn-pill-blush"
+              style="padding: 14px 34px; font-size: 0.92rem; text-decoration: none;">
+              <span>✨ Buka Studio &amp; Buat Custom Request</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            <span class="spotlight-trust">🌸 100% Bebas Biaya Konsultasi Awal &bull; Fast-Track WhatsApp Response</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Bespoke Creation Studio (Flagship Standalone Section - Always Visible)
+         ========================================================================== -->
+    <section class="bespoke-studio-section" id="custom-studio">
+      <!-- Anchor alias for legacy hash linking -->
+      <div id="custom-request" style="position: absolute; top: -100px;"></div>
+      <div id="custom-own" style="position: absolute; top: -100px;"></div>
+
+      <div class="container">
+        <!-- Bespoke Studio Header -->
+        <div class="section-header text-center">
+          <span class="section-eyebrow">✦ BESPOKE CREATION STUDIO ✦</span>
+          <h2 class="section-title">Design Your Own <em>Custom Piece</em></h2>
+          <p class="section-subtitle">
+            Punya ide unik untuk planner, template khusus, undangan digital, atau tracker keuangan pribadi?
+            Isi formulir interaktif di bawah ini dan kami akan merancangnya secara personal dengan sentuhan estetika
+            khas Sorenelle.
+          </p>
+        </div>
+
+        <!-- Bespoke Custom Request Card -->
+        <div class="custom-request-card">
+          <div class="custom-request-header-strip">
+            <span class="strip-sparkle">✦</span>
+            <span class="strip-text">BESPOKE ORDER BRIEF &bull; KONSULTASI 100% GRATIS</span>
+            <span class="strip-sparkle">✦</span>
+          </div>
+
+          <form id="customRequestForm" onsubmit="event.preventDefault(); handleCustomRequestSubmit();">
+            <div class="custom-form-grid">
+
+              <!-- Left Column: What do you need, Preferred Style, Budget & Deadline -->
+              <div class="custom-form-col">
+
+                <!-- 1. What do you need? -->
+                <div class="custom-field-group">
+                  <label class="custom-field-title">
+                    <span class="step-num">1</span>
+                    What do you need?
+                    <span class="field-hint">(Pilih satu atau lebih)</span>
+                  </label>
+                  <div class="custom-checkbox-grid">
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customNeed" value="Planner" class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Planner</span>
+                    </div>
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customNeed" value="Template" class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Template</span>
+                    </div>
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customNeed" value="Invitation" class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Invitation</span>
+                    </div>
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customNeed" value="Finance tracker" class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Finance tracker</span>
+                    </div>
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customNeed" value="Other" id="checkNeedOther"
+                        class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Other</span>
+                    </div>
+                  </div>
+                  <!-- Expandable Other Need Input -->
+                  <div class="custom-other-input-wrap" id="otherNeedWrap" style="display: none;">
+                    <input type="text" id="otherNeedText" class="custom-text-input"
+                      placeholder="Sebutkan jenis produk digital yang kamu butuhkan (misal: Habit Log, Sticker Pack)...">
+                  </div>
+                </div>
+
+                <!-- 2. Preferred style -->
+                <div class="custom-field-group">
+                  <label class="custom-field-title">
+                    <span class="step-num">2</span>
+                    Preferred style
+                    <span class="field-hint">(Gaya estetika yang disukai)</span>
+                  </label>
+                  <div class="custom-checkbox-grid">
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customStyle" value="Minimal" class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Minimal</span>
+                    </div>
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customStyle" value="Beige" class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Beige</span>
+                    </div>
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customStyle" value="Pink" class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Pink</span>
+                    </div>
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customStyle" value="Elegant" class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Elegant</span>
+                    </div>
+                    <div class="custom-checkbox-item" role="checkbox" aria-checked="false" tabindex="0"
+                      onclick="toggleCustomOption(this, event)" onkeydown="toggleCustomOption(this, event)">
+                      <input type="checkbox" name="customStyle" value="Custom" id="checkStyleCustom"
+                        class="custom-check-input">
+                      <span class="custom-check-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round" style="display:none;opacity:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span class="custom-check-label">Custom</span>
+                    </div>
+                  </div>
+                  <!-- Expandable Other Style Input -->
+                  <div class="custom-other-input-wrap" id="otherStyleWrap" style="display: none;">
+                    <input type="text" id="otherStyleText" class="custom-text-input"
+                      placeholder="Tuliskan palet warna atau nuansa visual yang kamu bayangkan...">
+                  </div>
+                </div>
+
+                <!-- 3. Budget & 4. Deadline -->
+                <div class="custom-two-col-fields">
+                  <div class="custom-field-group">
+                    <label class="custom-field-title" for="customBudget">
+                      <span class="step-num">3</span>
+                      Budget:
+                    </label>
+                    <div class="input-with-prefix">
+                      <span class="input-prefix">Rp</span>
+                      <input type="text" id="customBudget" class="custom-text-input" placeholder="Contoh: 150.000"
+                        inputmode="numeric" oninput="formatBudgetInput(this)">
+                    </div>
+                    <div class="budget-chips">
+                      <button type="button" class="budget-chip" onclick="setQuickBudget('75.000', this)">75k</button>
+                      <button type="button" class="budget-chip" onclick="setQuickBudget('150.000', this)">150k</button>
+                      <button type="button" class="budget-chip" onclick="setQuickBudget('250.000', this)">250k</button>
+                      <button type="button" class="budget-chip"
+                        onclick="setQuickBudget('400.000+', this)">400k+</button>
+                    </div>
+                  </div>
+
+                  <div class="custom-field-group">
+                    <label class="custom-field-title" for="customDeadline">
+                      <span class="step-num">4</span>
+                      Deadline:
+                    </label>
+                    <div class="input-date-wrap">
+                      <input type="date" id="customDeadline" class="custom-text-input custom-date-input">
+                    </div>
+                    <span class="field-subnote">Target estimasi selesai</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Column: Idea, Reference Upload, Contact & Submit -->
+              <div class="custom-form-col">
+
+                <!-- 5. Tell us about your idea -->
+                <div class="custom-field-group">
+                  <label class="custom-field-title" for="customIdea">
+                    <span class="step-num">5</span>
+                    Tell us about your idea:
+                    <span class="field-required">*</span>
+                  </label>
+                  <textarea id="customIdea" class="custom-textarea" rows="4"
+                    placeholder="Ceritakan detail produk impianmu: fungsi utama, jumlah halaman atau spread, fitur tab hyperlink, teks/nama yang ingin dicantumkan, atau tujuan penggunaannya..."
+                    required></textarea>
+                </div>
+
+                <!-- 6. Upload reference -->
+                <div class="custom-field-group">
+                  <label class="custom-field-title">
+                    <span class="step-num">6</span>
+                    Upload reference:
+                    <span class="field-hint">(Foto inspirasi, sketsa, moodboard)</span>
+                  </label>
+                  <div class="custom-dropzone" id="customDropzone">
+                    <input type="file" id="customRefFile" class="custom-file-input" accept="image/*,.pdf" multiple
+                      onchange="handleReferenceFiles(this.files)">
+                    <div class="dropzone-content" id="dropzonePrompt">
+                      <div class="dropzone-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                          <polyline points="17 8 12 3 7 8"></polyline>
+                          <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                      </div>
+                      <div class="dropzone-text">
+                        <strong>Pilih file</strong> atau tarik &amp; lepas ke sini
+                      </div>
+                      <span class="dropzone-hint">Format PNG, JPG, atau PDF (Maks. 10MB)</span>
+                    </div>
+                    <div class="dropzone-preview-list" id="dropzonePreviewList"></div>
+                  </div>
+                </div>
+
+                <!-- Contact Details for Quote -->
+                <div class="custom-two-col-fields">
+                  <div class="custom-field-group">
+                    <label class="custom-field-title" for="customClientName">
+                      Nama Kamu:
+                      <span class="field-required">*</span>
+                    </label>
+                    <input type="text" id="customClientName" class="custom-text-input"
+                      placeholder="Nama lengkap / panggilan" required>
+                  </div>
+                  <div class="custom-field-group">
+                    <label class="custom-field-title" for="customClientContact">
+                      WhatsApp / Instagram:
+                      <span class="field-required">*</span>
+                    </label>
+                    <input type="text" id="customClientContact" class="custom-text-input"
+                      placeholder="08xxxxxxxxxx atau @username" required>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="custom-submit-wrap">
+                  <button type="submit" class="btn-pill btn-pill-blush custom-submit-btn" id="btnSubmitCustom">
+                    <span>Kirim Custom Request via WhatsApp</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                  <button type="button" class="btn-custom-reset" onclick="resetCustomRequestForm()"
+                    title="Bersihkan Formulir">
+                    Reset Form
+                  </button>
+                </div>
+
+                <p class="custom-submit-note">
+                  🌸 <strong>100% Bebas Konsultasi Awal</strong> &bull; Brief pesanan akan otomatis diformat dan
+                  dikirimkan ke WhatsApp resmi Sorenelle untuk estimasi slot pengerjaan &amp; penawaran harga terbaik.
+                </p>
+
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       Shop Ready-Made Collection Section
+       ========================================================================== -->
+    <section class="products-section" id="products">
+      <div class="container">
+
+        <!-- Top Shopping Mode Selector: Quick Jump between Bespoke Studio & Ready-Made -->
+        <div class="shop-mode-selector-wrap">
+          <div class="shop-mode-switcher" role="tablist" aria-label="Shopping Mode Selection">
+            <button class="shop-mode-btn" id="btnModeCustom" role="tab" aria-selected="false"
+              onclick="switchShopMode('custom-studio')">
+              <span class="mode-icon">✨</span>
+              <span class="mode-text">Bespoke Custom Studio</span>
+              <span class="mode-pill-badge mode-pill-sparkle">Bespoke Order</span>
+            </button>
+            <button class="shop-mode-btn active" id="btnModeReadyMade" role="tab" aria-selected="true"
+              onclick="switchShopMode('ready-made')">
+              <span class="mode-icon">🛍️</span>
+              <span class="mode-text">Shop Ready-Made</span>
+              <span class="mode-pill-badge">6 Collections</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- VIEW: Ready-Made Products Collection -->
+        <div class="shop-view-pane active" id="viewReadyMade">
+          <!-- Section Header -->
+          <div class="section-header">
+            <span class="section-eyebrow">THE GENTLE COLLECTION</span>
+            <h2 class="section-title">Mindfully Designed <em>Digital Goods</em></h2>
+            <p class="section-subtitle">
+              Each page is thoughtfully drafted with soft neutral tones, generous breathing room, and seamless
+              hyperlinks
+              to turn your daily planning into a peaceful ritual.
+            </p>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-tab active" data-filter="all">All Works</button>
+            <button class="filter-tab" data-filter="planners">Digital Planners</button>
+            <button class="filter-tab" data-filter="journals">Mindful Journals</button>
+            <button class="filter-tab" data-filter="business">Business &amp; Finance</button>
+            <button class="filter-tab" data-filter="freebies">Free Downloads</button>
+            <button class="filter-tab filter-tab-bespoke" data-filter="bespoke"
+              onclick="switchShopMode('custom-studio')" title="Rancang Planner Sendiri">✨ Custom Studio
+              (Bespoke)</button>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid" id="productGrid">
+
+            <!-- Product 1: Sorenelle Minimal Digital Planner -->
+            <article class="product-card" data-id="planner-2027" data-category="planners"
+              data-name="✦ SORENELLE Minimal Digital Planner ✦" data-price="89000" data-price-formatted="Rp 89.000"
+              data-img="assets/✦ SORENELLE Minimal Digital Planner 2027 ✦.png"
+              data-preview-img="assets/✦ SORENELLE Minimal Digital Planner 2027 ✦.png">
+              <div class="product-media" onclick="openProductDetail('planner-2027')" style="cursor: pointer;"
+                title="Click to view product details">
+                <span class="product-badge badge-rose">Bestseller</span>
+                <img src="assets/✦ SORENELLE Minimal Digital Planner 2027 ✦.png"
+                  alt="SORENELLE Minimal Digital Planner 2027">
+                <div class="product-overlay-actions">
+                  <button class="quick-preview-btn"
+                    onclick="event.stopPropagation(); openProductDetail('planner-2027');">
+                    Quick View &amp; Details ✨
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-cat">All-in-One Digital Planner</span>
+                <h3 class="product-name" onclick="openProductDetail('planner-2027')" style="cursor: pointer;"
+                  title="Click to view product details">
+                  ✦ SORENELLE Minimal Planner 2026/2027 ✦
+                </h3>
+                <p class="product-desc">
+                  All-in-one minimal hyperlinked digital planner featuring over 650+ pages of seamless navigation.
+                  Includes yearly calendar, weekly schedules, daily reflections, and goal trackers.
+                </p>
+                <div class="product-specs">
+                  <span class="spec-pill">GoodNotes 6 Ready</span>
+                  <span class="spec-pill">Sunday &amp; Monday Start</span>
+                  <span class="spec-pill">4 Aesthetic Themes</span>
+                </div>
+                <div class="product-bottom-row">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 149.000</span>
+                    <span class="price-current">Rp 89.000</span>
+                  </div>
+                  <div class="product-card-actions-group">
+                    <button class="btn-card-detail" onclick="openProductDetail('planner-2027')"
+                      title="Open Product Details">
+                      Details ✨
+                    </button>
+                    <button class="add-cart-btn" aria-label="Add to cart">
+                      <span>Add to Bag</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 2: Journey to Joy -->
+            <article class="product-card" data-id="journey-joy" data-category="journals"
+              data-name="Journey to Joy: Intentional Reflection Journal" data-price="75000"
+              data-price-formatted="Rp 75.000"
+              data-img="assets/Journey to Joy - Intentionally Created Worksheets planner2024 909.jpeg"
+              data-preview-img="assets/Journey to Joy - Intentionally Created Worksheets planner2024 909.jpeg">
+              <div class="product-media" onclick="openProductDetail('journey-joy')" style="cursor: pointer;"
+                title="Click to view product details">
+                <span class="product-badge">Staff Favorite</span>
+                <img src="assets/Journey to Joy - Intentionally Created Worksheets planner2024 909.jpeg"
+                  alt="Journey to Joy Journal">
+                <div class="product-overlay-actions">
+                  <button class="quick-preview-btn"
+                    onclick="event.stopPropagation(); openProductDetail('journey-joy');">
+                    Quick View &amp; Details ✨
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-cat">Mindful Journal &amp; Prompts</span>
+                <h3 class="product-name" onclick="openProductDetail('journey-joy')" style="cursor: pointer;"
+                  title="Click to view product details">
+                  Journey to Joy: Intentional Reflection Journal
+                </h3>
+                <p class="product-desc">
+                  Guided daily reflection worksheets featuring weekly Sunday reset rituals, gratitude prompts, habit
+                  tracking, and yearly life mapping to process emotions with gentleness.
+                </p>
+                <div class="product-specs">
+                  <span class="spec-pill">50+ Guided Prompts</span>
+                  <span class="spec-pill">Interactive PDF</span>
+                  <span class="spec-pill">Printable A4 &amp; US Letter</span>
+                </div>
+                <div class="product-bottom-row">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 115.000</span>
+                    <span class="price-current">Rp 75.000</span>
+                  </div>
+                  <div class="product-card-actions-group">
+                    <button class="btn-card-detail" onclick="openProductDetail('journey-joy')"
+                      title="Open Product Details">
+                      Details ✨
+                    </button>
+                    <button class="add-cart-btn" aria-label="Add to cart">
+                      <span>Add to Bag</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 3: Business & Income Planner -->
+            <article class="product-card" data-id="business-planner" data-category="business"
+              data-name="Quiet Wealth: Business & Goal Planner" data-price="69000" data-price-formatted="Rp 69.000"
+              data-img="assets/Get Your FREE Business Planner - Instant Download 1384.jpeg"
+              data-preview-img="assets/Get Your FREE Business Planner - Instant Download 1384.jpeg">
+              <div class="product-media" onclick="openProductDetail('business-planner')" style="cursor: pointer;"
+                title="Click to view product details">
+                <span class="product-badge badge-rose">New Release</span>
+                <img src="assets/Get Your FREE Business Planner - Instant Download 1384.jpeg" alt="Business Planner">
+                <div class="product-overlay-actions">
+                  <button class="quick-preview-btn"
+                    onclick="event.stopPropagation(); openProductDetail('business-planner');">
+                    Quick View &amp; Details ✨
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-cat">Business &amp; Finance</span>
+                <h3 class="product-name" onclick="openProductDetail('business-planner')" style="cursor: pointer;"
+                  title="Click to view product details">
+                  Quiet Wealth: Business &amp; Goal Planner
+                </h3>
+                <p class="product-desc">
+                  Organize your creative business and freelance dreams with ease. Complete with quarterly revenue logs,
+                  SMART goal matrix, client tracking, and project planners.
+                </p>
+                <div class="product-specs">
+                  <span class="spec-pill">Income &amp; Expense Tracker</span>
+                  <span class="spec-pill">Content &amp; Audience Matrix</span>
+                  <span class="spec-pill">Hyperlinked</span>
+                </div>
+                <div class="product-bottom-row">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 99.000</span>
+                    <span class="price-current">Rp 69.000</span>
+                  </div>
+                  <div class="product-card-actions-group">
+                    <button class="btn-card-detail" onclick="openProductDetail('business-planner')"
+                      title="Open Product Details">
+                      Details ✨
+                    </button>
+                    <button class="add-cart-btn" aria-label="Add to cart">
+                      <span>Add to Bag</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 4: Soft Morning Study Companion -->
+            <article class="product-card" data-id="morning-notebook" data-category="planners"
+              data-name="Soft Morning Digital Notebook & Study Companion" data-price="49000"
+              data-price-formatted="Rp 49.000" data-img="assets/1013098878707273572.jpeg"
+              data-preview-img="assets/1013098878707273572.jpeg">
+              <div class="product-media" onclick="openProductDetail('morning-notebook')" style="cursor: pointer;"
+                title="Click to view product details">
+                <span class="product-badge">Cozy Essential</span>
+                <img src="assets/1013098878707273572.jpeg" alt="Digital Notebook Companion">
+                <div class="product-overlay-actions">
+                  <button class="quick-preview-btn"
+                    onclick="event.stopPropagation(); openProductDetail('morning-notebook');">
+                    Quick View &amp; Details ✨
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-cat">Digital Notebook</span>
+                <h3 class="product-name" onclick="openProductDetail('morning-notebook')" style="cursor: pointer;"
+                  title="Click to view product details">
+                  Soft Morning Digital Notebook &amp; Study Companion
+                </h3>
+                <p class="product-desc">
+                  Minimalist spiral digital notebook for lecture notes, morning journaling, creative braindumps, and
+                  reading summaries.
+                </p>
+                <div class="product-specs">
+                  <span class="spec-pill">8 Hyperlinked Subject Tabs</span>
+                  <span class="spec-pill">Lined / Dotted / Grid Spreads</span>
+                  <span class="spec-pill">Unlimited Pages</span>
+                </div>
+                <div class="product-bottom-row">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 75.000</span>
+                    <span class="price-current">Rp 49.000</span>
+                  </div>
+                  <div class="product-card-actions-group">
+                    <button class="btn-card-detail" onclick="openProductDetail('morning-notebook')"
+                      title="Open Product Details">
+                      Details ✨
+                    </button>
+                    <button class="add-cart-btn" aria-label="Add to cart">
+                      <span>Add to Bag</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 5: Digital Sticker Vault -->
+            <article class="product-card" data-id="sticker-vault" data-category="journals"
+              data-name="Aesthetic Digital Sticker Vault (350+ Elements)" data-price="39000"
+              data-price-formatted="Rp 39.000" data-img="assets/5488830793248950.jpeg"
+              data-preview-img="assets/5488830793248950.jpeg">
+              <div class="product-media" onclick="openProductDetail('sticker-vault')" style="cursor: pointer;"
+                title="Click to view product details">
+                <span class="product-badge">Pre-Cropped</span>
+                <img src="assets/5488830793248950.jpeg" alt="Aesthetic Digital Stickers">
+                <div class="product-overlay-actions">
+                  <button class="quick-preview-btn"
+                    onclick="event.stopPropagation(); openProductDetail('sticker-vault');">
+                    Quick View &amp; Details ✨
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-cat">Digital Ephemera &amp; Stickers</span>
+                <h3 class="product-name" onclick="openProductDetail('sticker-vault')" style="cursor: pointer;"
+                  title="Click to view product details">
+                  Aesthetic Digital Sticker Vault (350+ Elements)
+                </h3>
+                <p class="product-desc">
+                  Torn paper memos, vintage flower petals, lace ribbons, and washi tapes ready for GoodNotes elements
+                  and individual transparent PNGs.
+                </p>
+                <div class="product-specs">
+                  <span class="spec-pill">GoodNotes Elements File</span>
+                  <span class="spec-pill">Individual PNGs</span>
+                  <span class="spec-pill">High-Res (300 DPI)</span>
+                </div>
+                <div class="product-bottom-row">
+                  <div class="price-wrap">
+                    <span class="price-original">Rp 59.000</span>
+                    <span class="price-current">Rp 39.000</span>
+                  </div>
+                  <div class="product-card-actions-group">
+                    <button class="btn-card-detail" onclick="openProductDetail('sticker-vault')"
+                      title="Open Product Details">
+                      Details ✨
+                    </button>
+                    <button class="add-cart-btn" aria-label="Add to cart">
+                      <span>Add to Bag</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 6: Free Weekly Reset Sampler -->
+            <article class="product-card" data-id="free-sampler" data-category="freebies"
+              data-name="Free 2026 Weekly Reset & Clarity Sampler" data-price="0" data-price-formatted="FREE"
+              data-img="assets/Desain tanpa judul.png" data-preview-img="assets/Desain tanpa judul.png">
+              <div class="product-media" onclick="openProductDetail('free-sampler')" style="cursor: pointer;"
+                title="Click to view product details">
+                <span class="product-badge badge-rose">Free Sampler</span>
+                <img src="assets/Desain tanpa judul.png" alt="Free Sampler">
+                <div class="product-overlay-actions">
+                  <button class="quick-preview-btn"
+                    onclick="event.stopPropagation(); openProductDetail('free-sampler');">
+                    Quick View &amp; Details ✨
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-cat">Complimentary Gift</span>
+                <h3 class="product-name" onclick="openProductDetail('free-sampler')" style="cursor: pointer;"
+                  title="Click to view product details">
+                  Free 2026 Weekly Reset &amp; Clarity Sampler
+                </h3>
+                <p class="product-desc">
+                  Experience Sorenelle’s signature layout for free. Includes 1 weekly overview spread and 1 guided
+                  evening reflection page.
+                </p>
+                <div class="product-specs">
+                  <span class="spec-pill">Instant PDF Download</span>
+                  <span class="spec-pill">100% Free Forever</span>
+                  <span class="spec-pill">GoodNotes Compatible</span>
+                </div>
+                <div class="product-bottom-row">
+                  <div class="price-wrap">
+                    <span class="price-current free-price">FREE (Rp 0)</span>
+                  </div>
+                  <div class="product-card-actions-group">
+                    <button class="btn-card-detail" onclick="openProductDetail('free-sampler')"
+                      title="Open Product Details">
+                      Details ✨
+                    </button>
+                    <button class="add-cart-btn" aria-label="Download for free">
+                      <span>Download Free</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 7: Bespoke Custom Studio Showcase Card (FLAGSHIP FEATURE) -->
+            <article class="product-card product-card-bespoke-featured" data-id="bespoke-custom"
+              data-category="bespoke all" data-name="✦ Sorenelle Bespoke &bull; Custom Digital Goods ✦"
+              data-price="49000" data-price-formatted="Mulai Rp 49.000"
+              data-img="assets/Thoughtfully Designed Digital Goods.png"
+              data-preview-img="assets/Thoughtfully Designed Digital Goods.png">
+              <div class="product-media" onclick="switchShopMode('custom-studio')" style="cursor: pointer;"
+                title="Buka Studio Custom Bespoke">
+                <span class="product-badge badge-signature">★ Signature Bespoke</span>
+                <img src="assets/Thoughtfully Designed Digital Goods.png" alt="Sorenelle Bespoke Custom Digital Studio">
+                <div class="product-overlay-actions">
+                  <button class="quick-preview-btn" onclick="event.stopPropagation(); switchShopMode('custom-studio');">
+                    Buka Studio Pemesanan ✨
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+                  <span class="product-cat" style="color: var(--c-blush); font-weight: 700;">★ SORENELLE BESPOKE</span>
+                  <span
+                    style="font-size: 0.72rem; background: rgba(216, 149, 151, 0.18); color: #8A484A; font-weight: 700; padding: 2px 8px; border-radius: 99px;">1-on-1
+                    WhatsApp</span>
+                </div>
+                <h3 class="product-name" onclick="switchShopMode('custom-studio')" style="cursor: pointer;"
+                  title="Buka Studio Custom Bespoke">
+                  ✦ Bespoke Custom Creation Studio ✦
+                </h3>
+                <p class="product-desc">
+                  Rancang digital planner, template Notion, spreadsheet keuangan, atau kartu digital dari nol sesuai
+                  kebutuhanmu. Hyperlink kustom &amp; palet warna personal.
+                </p>
+                <div class="product-specs">
+                  <span class="spec-pill" style="border-color: rgba(216, 149, 151, 0.4); color: #8A484A;">100% Request
+                    Bebas</span>
+                  <span class="spec-pill" style="border-color: rgba(216, 149, 151, 0.4); color: #8A484A;">Konsultasi
+                    Gratis</span>
+                  <span class="spec-pill" style="border-color: rgba(216, 149, 151, 0.4); color: #8A484A;">Estimasi 24
+                    Jam</span>
+                </div>
+                <div class="product-bottom-row">
+                  <div class="price-wrap">
+                    <span class="price-original">Mulai Rp 99.000</span>
+                    <span class="price-current" style="color: #A96264; font-size: 0.95rem;">Mulai Rp 49.000</span>
+                  </div>
+                  <div class="product-card-actions-group">
+                    <button class="btn-card-detail" onclick="switchShopMode('custom-studio')" title="Buka Studio Custom"
+                      style="background: var(--c-mocha-dark); color: #FFF; border-color: var(--c-mocha-dark);">
+                      Custom ✨
+                    </button>
+                    <button class="add-cart-btn" onclick="switchShopMode('custom-studio')"
+                      aria-label="Mulai Custom Request"
+                      style="background: linear-gradient(135deg, #D89597 0%, #A96264 100%);">
+                      <span>Buat Custom</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       Interactive Typewriter / Love Note Feature
+       ========================================================================== -->
+    <section class="typewriter-section" id="typewriter">
+      <div class="container">
+        <div class="typewriter-container">
+
+          <!-- Left: Descriptive Content -->
+          <div class="typewriter-text-content">
+            <span class="section-eyebrow">INTERACTIVE REFLECTION</span>
+            <h2>Send Yourself a <em>Gentle Reminder</em></h2>
+            <p>
+              Before opening your planner each morning, take a slow, restorative breath. Write down one sentence of
+              calm intention to anchor your day. Watch your words softly typed onto the vintage paper beside you.
+            </p>
+
+            <div class="typewriter-input-box">
+              <label for="typewriterInput"
+                style="display:block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-mocha-dark); margin-bottom: 8px;">
+                Write your daily affirmation:
+              </label>
+              <input type="text" id="typewriterInput" class="typewriter-input"
+                placeholder="e.g. Today I choose peace over hurry, and grace over pressure..."
+                value="Today I choose calm over hurry, gratitude over fear, and peace in every breath.">
+
+              <div class="typewriter-presets">
+                <span
+                  style="font-size: 0.72rem; color: var(--c-text-light); margin-right: 4px; align-self: center;">Quick
+                  picks:</span>
+                <span class="preset-chip" data-text="Plan softly, create intentionally, and live beautifully.">🌸 Plan
+                  softly</span>
+                <span class="preset-chip" data-text="Moving at my own gentle pace; there is no race to win.">🕊️ My
+                  own pace</span>
+                <span class="preset-chip" data-text="Today is filled with quiet miracles waiting to be noticed.">✨
+                  Quiet miracles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Typewriter Paper Visual -->
+          <div class="typewriter-visual-wrap">
+            <div class="typewriter-machine-card">
+              <div class="typewriter-sheet">
+                <div class="sheet-header">
+                  <span>SORENELLE DAILY DIARY</span>
+                  <span id="sheetDate">OCTOBER 2026</span>
+                </div>
+                <div class="typewriter-live-output" id="typewriterLiveOutput"></div>
+                <span class="typewriter-cursor" aria-hidden="true"></span>
+                <div class="sheet-footer">
+                  <span>With love, Sorenelle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Philosophy & Story Section ("About Sorenelle")
+         ========================================================================== -->
+    <section class="philosophy-section" id="about">
+      <div class="container">
+        <div class="philosophy-grid">
+
+          <!-- Image Frame with Reading Girl and Logo -->
+          <div class="philosophy-visual">
+            <div class="philosophy-img-frame">
+              <img src="assets/738660776420333197.jpeg" alt="SORENELLE Open Journal with Pink Lily">
+            </div>
+            <div class="philosophy-quote-badge">
+              <p>"Plan softly. Create intentionally. Live beautifully."</p>
+              <span>— Sorenelle Studio Manifesto</span>
+            </div>
+          </div>
+
+          <!-- Editorial Philosophy Copy -->
+          <div class="philosophy-content">
+            <span class="section-eyebrow">OUR PHILOSOPHY</span>
+            <h2>Created for <em>Gentle Living</em></h2>
+            <p>
+              In a world that constantly demands hurry, hustle, and endless noise, Sorenelle was created as a gentle
+              sanctuary. We believe that your daily planner should feel like a peaceful retreat—not an overwhelming
+              list of demands.
+            </p>
+            <p>
+              Each digital template is thoughtfully drafted with generous margins, soft neutral tones that soothe the
+              eyes, and intuitive hyperlinks designed to respect your cognitive space. Because organizing your life
+              should bring you peace, not pressure.
+            </p>
+
+            <div class="philosophy-values">
+              <div class="value-item">
+                <h4>🌿 Zero Visual Noise</h4>
+                <p>No loud neon colors or cluttered graphics. Only serene, muted palettes designed to soothe your
+                  senses.</p>
+              </div>
+              <div class="value-item">
+                <h4>⚡ One-Tap Navigation</h4>
+                <p>Effortlessly jump between yearly overviews, weekly schedules, and daily reflections with instant
+                  response.</p>
+              </div>
+              <div class="value-item">
+                <h4>🌸 Undated Flexibility</h4>
+                <p>Begin whenever your season calls for it. Missed a few weeks? Resume gently without any guilt.</p>
+              </div>
+              <div class="value-item">
+                <h4>💌 Lifetime Companionship</h4>
+                <p>Download once, cherish forever. Enjoy complimentary seasonal refreshes delivered straight to your
+                  account.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Testimonials / Polaroid Reviews
+         ========================================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">COMMUNITY LOVE NOTES</span>
+          <h2 class="section-title">Words from <em>Gentle Hearts</em></h2>
+          <p class="section-subtitle">
+            Heartfelt stories from mindful journalers, students, and creators cultivating their dream routines
+            with Sorenelle.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+
+          <!-- Polaroid 1 -->
+          <div class="polaroid-card">
+            <div class="tape-deco" aria-hidden="true"></div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "This is the very first digital planner that didn't leave me feeling overwhelmed. The hyperlinks are
+              silky
+              smooth in GoodNotes, and the warm beige tones feel like a gentle hug."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-info">
+                <h5>Clarissa V.</h5>
+                <span>Architecture Student • Jakarta</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Polaroid 2 -->
+          <div class="polaroid-card">
+            <div class="tape-deco" aria-hidden="true"></div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "The Journey to Joy worksheets truly grounded me through a demanding season. Sitting down with my iPad
+              and an iced matcha every Sunday morning is now my sacred ritual."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-info">
+                <h5>Hannah M.</h5>
+                <span>Content Creator • Singapore</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Polaroid 3 -->
+          <div class="polaroid-card">
+            <div class="tape-deco" aria-hidden="true"></div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "Worth every single penny! The layout is poetic, pristine, and inspiring. The studio customer support
+              was
+              incredibly sweet and personally helped me import my files in minutes."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-info">
+                <h5>Nadira S.</h5>
+                <span>Studio Owner • Bandung</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Freebie Lead Magnet
+         ========================================================================== -->
+    <section class="freebie-section" id="freebie">
+      <div class="container">
+        <div class="freebie-box">
+          <div class="freebie-text">
+            <span class="section-eyebrow">A COMPLIMENTARY GIFT</span>
+            <h2>Receive our <em>Weekly Reset</em> Template</h2>
+            <p>
+              Join our gentle circle and instantly receive our 2-page weekly reflection reset template (in printable
+              &amp;
+              GoodNotes format) completely free. No spam—only mindful notes and quiet inspiration.
+            </p>
+            <form class="freebie-form"
+              onsubmit="event.preventDefault(); showToast('Welcome to our gentle circle! Check your email for your gift ✨'); this.reset();">
+              <input type="email" class="freebie-input" placeholder="Your favorite email address..." required>
+              <button type="submit" class="btn-pill btn-pill-blush">CLAIM MY FREE GIFT</button>
+            </form>
+          </div>
+          <div class="freebie-img-wrap">
+            <img src="assets/Desain tanpa judul.png" alt="Free Planner Preview">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer (Rich Mocha tone matching navbar)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#home" class="brand-cursive-logo">Sorenelle</a>
+          <p class="footer-tagline">
+            A serene digital sanctuary, thoughtfully designed to help you organize your days, nurture your dreams,
+            and live with soft intention and beauty.
+          </p>
+          <div class="social-links" style="margin-top: 18px;">
+            <a href="https://instagram.com" class="social-circle-btn" aria-label="Instagram">IG</a>
+            <a href="https://tiktok.com" class="social-circle-btn" aria-label="TikTok">TT</a>
+            <a href="https://pinterest.com" class="social-circle-btn" aria-label="Pinterest">PI</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="#products">2026/2027 Planners</a></li>
+            <li><a href="#products">Gratitude Journals</a></li>
+            <li><a href="#products">Business &amp; Finance</a></li>
+            <li><a href="#products">Digital Stickers</a></li>
+            <li><a href="#freebie">Freebie Samplers</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care -->
+        <div>
+          <h4 class="footer-heading">Care &amp; Support</h4>
+          <ul class="footer-links">
+            <li><a href="#home">How to Download &amp; Access Files</a></li>
+            <li><a href="#home">GoodNotes Setup Guide</a></li>
+            <li><a href="#home">Frequently Asked Questions (FAQ)</a></li>
+            <li><a href="#home">Digital License Terms</a></li>
+            <li><a href="#home">Contact Our Studio</a></li>
+          </ul>
+        </div>
+
+        <!-- Studio Note -->
+        <div>
+          <h4 class="footer-heading">Studio Inquiries</h4>
+          <p style="font-size: 0.85rem; color: #CFC1B5; line-height: 1.6; margin-bottom: 12px;">
+            Have questions regarding device compatibility or custom orders for your community? Reach out to us at:
+          </p>
+          <a href="mailto:sorenellestudio@gmail.com"
+            style="color: #FFFFFF; font-weight: 600; text-decoration: underline; font-size: 0.9rem; display: block; margin-bottom: 8px;">
+            sorenellestudio@gmail.com
+          </a>
+          <a href="https://wa.me/6288975276696" target="_blank" rel="noopener noreferrer"
+            style="color: #EED7B7; font-weight: 600; text-decoration: none; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 6px;">
+            <span>💬 0889-7527-6696 (WhatsApp)</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 SORENELLE DIGITAL GOODS STUDIO. ALL RIGHTS RESERVED.</div>
+        <div>Crafted with love for intentional living &bull; Instant Global Digital Delivery</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Slide-Over Shopping Bag Drawer
+       ========================================================================== -->
+  <div class="cart-backdrop" id="cartBackdrop">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3>Your Gentle Bag (<span class="cart-count-badge" style="position:static; display:inline-flex;">1</span>)</h3>
+        <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close bag">&times;</button>
+      </div>
+      <div class="cart-items-body" id="cartItemsList">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+      <div class="cart-footer">
+        <!-- Promo Coupon Row -->
+        <div class="cart-promo-box">
+          <input type="text" id="cartPromoInput" placeholder="Promo code (e.g. GENTLE10)" class="cart-promo-input">
+          <button type="button" id="cartApplyPromoBtn" class="cart-promo-btn">Apply</button>
+        </div>
+        <div id="cartPromoFeedback" class="cart-promo-feedback"></div>
+
+        <div class="cart-subtotal-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">Rp 89.000</span>
+        </div>
+        <div class="cart-discount-row" id="cartDiscountRow" style="display:none;">
+          <span>Promo Discount (10%)</span>
+          <span id="cartDiscountVal">-Rp 8.900</span>
+        </div>
+        <div class="cart-total-row" id="cartTotalRow" style="display:none;">
+          <span>Final Total</span>
+          <span id="cartTotalVal">Rp 80.100</span>
+        </div>
+
+        <p class="cart-checkout-prompt">
+          Choose your preferred checkout channel (Instant digital delivery):
+        </p>
+
+        <!-- Dual Direct Checkout Buttons in Drawer -->
+        <div class="cart-direct-actions">
+          <button class="cart-channel-btn cart-wa-btn" id="cartDrawerWaBtn" title="Instant checkout via WhatsApp">
+            <svg class="cart-channel-svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+            <div class="cart-channel-info">
+              <span class="cart-channel-title">Checkout via WhatsApp</span>
+              <span class="cart-channel-sub">Bank Transfer / QRIS / E-Wallet • Personal &amp; Fast</span>
+            </div>
+          </button>
+
+          <button class="cart-channel-btn cart-etsy-btn" id="cartDrawerEtsyBtn"
+            title="Purchase on our official Etsy shop">
+            <span class="cart-etsy-badge">Etsy</span>
+            <div class="cart-channel-info">
+              <span class="cart-channel-title">Buy on Official Etsy Shop</span>
+              <span class="cart-channel-sub">Credit Card / PayPal • Instant Auto Download</span>
+            </div>
+          </button>
+        </div>
+
+        <button class="cart-checkout-btn" id="cartOpenCheckoutModalBtn">
+          FULL CHECKOUT OPTIONS &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Comprehensive Product Detail Modal
+       ========================================================================== -->
+  <div class="product-detail-backdrop" id="productDetailModal" role="dialog" aria-modal="true"
+    aria-labelledby="pdetailTitle">
+    <div class="product-detail-modal">
+
+      <!-- Close Button -->
+      <button class="modal-close-icon-btn" id="pdetailCloseBtn" aria-label="Close product details">&times;</button>
+
+      <div class="pdetail-scroll-area">
+        <div class="pdetail-layout">
+
+          <!-- Left Column: Gallery & Preview Swatches -->
+          <div class="pdetail-gallery-col">
+            <div class="pdetail-main-stage">
+              <span class="pdetail-badge-pill" id="pdetailBadge">Bestseller</span>
+              <img id="pdetailMainImg" src="" alt="Product Detail Preview" class="pdetail-main-img">
+              <div class="pdetail-zoom-hint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Select thumbnail to preview pages &amp; mockups</span>
+              </div>
+            </div>
+
+            <!-- Thumbnails Gallery Strip -->
+            <div class="pdetail-thumbs-wrap">
+              <span class="pdetail-thumbs-title">Page &amp; Layout Previews:</span>
+              <div class="pdetail-thumbs-row" id="pdetailThumbs">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+
+            <!-- Compatibility Badges Bar -->
+            <div class="pdetail-compat-box">
+              <div class="compat-title">Compatible with tablet note-taking apps &amp; PDF:</div>
+              <div class="compat-tags">
+                <span>📱 GoodNotes 5 &amp; 6</span>
+                <span>✍️ Notability</span>
+                <span>🖊️ Samsung Notes &amp; Penly</span>
+                <span>⚡ Notion</span>
+                <span>🖨️ PDF Printable</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Product Information & Direct Checkout Options -->
+          <div class="pdetail-info-col">
+            <div class="pdetail-cat-row">
+              <span class="pdetail-cat-tag" id="pdetailCategory">DIGITAL PLANNER</span>
+              <div class="pdetail-rating">
+                <span class="stars">★★★★★</span>
+                <span class="score" id="pdetailRating">5.0 (248 reviews)</span>
+              </div>
+            </div>
+
+            <h2 class="pdetail-title" id="pdetailTitle">Product Title Here</h2>
+
+            <div class="pdetail-price-strip">
+              <div class="price-figures">
+                <span class="pdetail-price-curr" id="pdetailPrice">Rp 89.000</span>
+                <span class="pdetail-price-orig" id="pdetailOldPrice">Rp 149.000</span>
+              </div>
+              <span class="pdetail-discount-tag" id="pdetailDiscount">Save 40%</span>
+              <span class="instant-download-tag">⚡ Instant Download</span>
+            </div>
+
+            <p class="pdetail-short-desc" id="pdetailDesc">
+              Short description about this mindful product.
+            </p>
+
+            <div class="pdetail-highlights" id="pdetailHighlights">
+              <!-- Feature highlight pills -->
+            </div>
+
+            <!-- ==============================================
+                 DIRECT PURCHASE & CHECKOUT ACTIONS
+                 (WhatsApp & Etsy direct integration)
+                 ============================================== -->
+            <div class="pdetail-purchase-box">
+              <div class="purchase-box-label">
+                <span>⚡ Select Instant Checkout Method:</span>
+              </div>
+
+              <!-- Action 1: Direct to WhatsApp -->
+              <button class="btn-checkout-channel btn-checkout-wa" id="pdetailWaBtn"
+                title="Order directly via WhatsApp">
+                <div class="btn-channel-icon wa-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                  </svg>
+                </div>
+                <div class="btn-channel-text">
+                  <span class="btn-channel-headline">Order via WhatsApp</span>
+                  <span class="btn-channel-subline">⚡ Fast Studio Response • Bank Transfer / QRIS / E-Wallet</span>
+                </div>
+                <div class="btn-channel-arrow">&rarr;</div>
+              </button>
+
+              <!-- Action 2: Direct to Etsy -->
+              <button class="btn-checkout-channel btn-checkout-etsy" id="pdetailEtsyBtn"
+                title="Purchase on our official Etsy shop">
+                <div class="btn-channel-icon etsy-icon">
+                  <span class="etsy-badge-text">Etsy</span>
+                </div>
+                <div class="btn-channel-text">
+                  <span class="btn-channel-headline">Buy on Official Etsy Shop</span>
+                  <span class="btn-channel-subline">💳 Credit Card / Debit / PayPal • Instant Digital File</span>
+                </div>
+                <div class="btn-channel-arrow">&rarr;</div>
+              </button>
+
+              <!-- Action 3: Add to Bag with Qty -->
+              <div class="pdetail-cart-action-row">
+                <div class="pdetail-qty-picker">
+                  <button type="button" class="qty-btn" id="pdetailQtyDec"
+                    aria-label="Decrease quantity">&minus;</button>
+                  <span class="qty-value" id="pdetailQtyVal">1</span>
+                  <button type="button" class="qty-btn" id="pdetailQtyInc" aria-label="Increase quantity">&#43;</button>
+                </div>
+                <button class="btn-pill btn-pill-blush pdetail-add-bag-btn" id="pdetailAddBagBtn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span>ADD TO BAG</span>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Product Information Tabs -->
+            <div class="pdetail-tabs-section">
+              <div class="pdetail-tabs-header" role="tablist">
+                <button class="pdetail-tab-btn active" data-tab="tab-whats-inside">✨ What's Included</button>
+                <button class="pdetail-tab-btn" data-tab="tab-compatibility">📱 Compatibility</button>
+                <button class="pdetail-tab-btn" data-tab="tab-how-to-use">📥 How to Download</button>
+                <button class="pdetail-tab-btn" data-tab="tab-guarantee">🌸 Studio Guarantee</button>
+              </div>
+
+              <div class="pdetail-tab-contents">
+                <!-- Tab 1: What's Inside -->
+                <div class="pdetail-tab-panel active" id="tab-whats-inside">
+                  <ul class="pdetail-feature-list" id="pdetailFeatureList">
+                    <!-- Injected dynamically -->
+                  </ul>
+                </div>
+
+                <!-- Tab 2: Compatibility -->
+                <div class="pdetail-tab-panel" id="tab-compatibility">
+                  <div class="compat-details">
+                    <p>Sorenelle digital goods are crafted with ultra-responsive hyperlinked navigation, fully
+                      compatible across iPad, Android, Mac, and Windows:</p>
+                    <ul class="compat-list">
+                      <li><strong>Apple iPad:</strong> GoodNotes 5 &amp; 6 (Highly Recommended), Notability, CollaNote,
+                        Noteshelf, Xodo, Apple Books.</li>
+                      <li><strong>Android Tablet &amp; Samsung:</strong> Samsung Notes, Penly, Touchnotes, Flexcil,
+                        Adobe Acrobat Reader.</li>
+                      <li><strong>Mac / PC:</strong> GoodNotes for Mac, Adobe Acrobat Reader, Notability Mac.</li>
+                      <li><strong>Stylus Support:</strong> Full support for Apple Pencil, Samsung S-Pen, and universal
+                        stylus pens.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tab 3: How to Use & Download -->
+                <div class="pdetail-tab-panel" id="tab-how-to-use">
+                  <div class="steps-flow">
+                    <div class="step-card">
+                      <div class="step-num">1</div>
+                      <div class="step-body">
+                        <h5>Choose Checkout Method</h5>
+                        <p>Order directly via WhatsApp (Bank Transfer / QRIS) or through our official Etsy shop (Credit
+                          Card / PayPal).</p>
+                      </div>
+                    </div>
+                    <div class="step-card">
+                      <div class="step-num">2</div>
+                      <div class="step-body">
+                        <h5>Instant Download Access</h5>
+                        <p>Your digital files (.pdf and .zip bundles) are delivered to your WhatsApp or email inbox in
+                          seconds.</p>
+                      </div>
+                    </div>
+                    <div class="step-card">
+                      <div class="step-num">3</div>
+                      <div class="step-body">
+                        <h5>Import &amp; Begin Planning</h5>
+                        <p>Tap 'Open in GoodNotes' or your favorite notes app. A complete step-by-step video setup
+                          tutorial is included.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tab 4: Guarantee & Care -->
+                <div class="pdetail-tab-panel" id="tab-guarantee">
+                  <div class="guarantee-box">
+                    <h5>🌸 Sorenelle Studio Guarantee</h5>
+                    <p>We want your planning experience to feel completely serene. If you ever encounter technical
+                      difficulties importing your files or need help configuring your device, our studio team is always
+                      here to guide you until everything runs smoothly via WhatsApp or email.</p>
+                    <div class="guarantee-points">
+                      <span>✓ 100% Guaranteed Hyperlink Accuracy</span>
+                      <span>✓ Free Lifetime Yearly Refreshes</span>
+                      <span>✓ Warm &amp; Personal Customer Support</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trust Bar -->
+            <div class="pdetail-trust-strip">
+              <div class="trust-item">
+                <span class="trust-icon">⚡</span>
+                <span class="trust-label">Automated Instant Delivery</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon">🔒</span>
+                <span class="trust-label">Secure &amp; Verified Payment</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon">♾️</span>
+                <span class="trust-label">Lifetime Unrestricted Access</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Checkout Choice Modal (WhatsApp vs Etsy Direct Flow)
+       ========================================================================== -->
+  <div class="checkout-modal-backdrop" id="checkoutChoiceModal" role="dialog" aria-modal="true"
+    aria-labelledby="checkoutChoiceTitle">
+    <div class="checkout-modal-card">
+      <div class="checkout-modal-header">
+        <div class="checkout-modal-title-wrap">
+          <span class="section-eyebrow" style="margin-bottom:2px;">COMPLETE YOUR ORDER</span>
+          <h3 id="checkoutChoiceTitle">Select Checkout Channel</h3>
+        </div>
+        <button class="modal-close-icon-btn" id="checkoutChoiceCloseBtn" aria-label="Close checkout">&times;</button>
+      </div>
+
+      <div class="checkout-modal-body">
+
+        <!-- Order Summary Box -->
+        <div class="checkout-summary-box">
+          <div class="summary-header">
+            <h4>Your Order Summary</h4>
+            <span class="summary-items-count" id="checkoutModalItemCount">1 item</span>
+          </div>
+          <div class="summary-items-list" id="checkoutModalItemsList">
+            <!-- Dynamically populated -->
+          </div>
+
+          <!-- Promo Code Row -->
+          <div class="checkout-promo-row">
+            <input type="text" id="checkoutPromoInput" placeholder="Promo coupon: GENTLE10" class="promo-input">
+            <button type="button" class="promo-apply-btn" id="checkoutPromoBtn">Apply</button>
+          </div>
+          <div id="checkoutPromoMessage" class="promo-feedback"></div>
+
+          <div class="summary-totals-table">
+            <div class="total-row">
+              <span>Subtotal:</span>
+              <span id="checkoutModalSubtotal">Rp 0</span>
+            </div>
+            <div class="total-row discount-row" id="checkoutModalDiscountRow" style="display:none;">
+              <span>Discount (Coupon GENTLE10 -10%):</span>
+              <span id="checkoutModalDiscount">-Rp 0</span>
+            </div>
+            <div class="total-row total-highlight">
+              <span>Total Due:</span>
+              <span id="checkoutModalTotal">Rp 0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional Buyer Info to personalize WA message -->
+        <div class="checkout-buyer-info-box">
+          <label
+            style="font-size:0.75rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--c-mocha-dark); display:block; margin-bottom:8px;">
+            Customer Details (Optional for WhatsApp):
+          </label>
+          <div class="buyer-info-grid">
+            <input type="text" id="buyerNameInput" class="buyer-input" placeholder="Your name...">
+            <input type="email" id="buyerEmailInput" class="buyer-input" placeholder="Email for file delivery...">
+          </div>
+        </div>
+
+        <!-- Choice Cards: WhatsApp vs Etsy -->
+        <div class="checkout-channels-grid">
+
+          <!-- Option A: WhatsApp -->
+          <div class="checkout-channel-card channel-wa-card">
+            <div class="channel-card-top">
+              <span class="channel-badge badge-wa">Recommended for Indonesia 🇮🇩</span>
+              <div class="channel-icon-title">
+                <div class="wa-bubble-icon">💬</div>
+                <h4>Checkout via WhatsApp</h4>
+              </div>
+              <p class="channel-desc">
+                Order directly with our Sorenelle Studio support team. Pay easily via <strong>QRIS, Bank
+                  Transfer (BCA/Mandiri/BRI)</strong>, or <strong>GoPay/ShopeePay</strong>. Digital download links are
+                sent immediately to
+                your chat &amp; email.
+              </p>
+            </div>
+            <button class="btn-channel-action btn-wa-action" id="proceedWaCheckoutBtn">
+              <span>CONTINUE TO WHATSAPP &rarr;</span>
+            </button>
+          </div>
+
+          <!-- Option B: Etsy -->
+          <div class="checkout-channel-card channel-etsy-card">
+            <div class="channel-card-top">
+              <span class="channel-badge badge-etsy">International &amp; Cards 🌐</span>
+              <div class="channel-icon-title">
+                <div class="etsy-bubble-icon">Etsy</div>
+                <h4>Checkout on Etsy Shop</h4>
+              </div>
+              <p class="channel-desc">
+                Purchase securely via our official Sorenelle Etsy shop. Supports <strong>Credit Cards, Debit Cards, and
+                  PayPal</strong> with full buyer protection and automated instant file download.
+              </p>
+            </div>
+            <button class="btn-channel-action btn-etsy-action" id="proceedEtsyCheckoutBtn">
+              <span>OPEN ETSY SHOP &rarr;</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="checkout-modal-footer">
+        <button type="button" class="btn-copy-order" id="copyOrderSummaryBtn">
+          📋 Copy Order Details
+        </button>
+        <span style="font-size:0.75rem; color:var(--c-text-light);">
+          ✨ Instant digital download links will be delivered immediately upon payment confirmation.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Page Preview Modal ("Look Inside")
+       ========================================================================== -->
+  <div class="preview-modal-backdrop" id="previewModalBackdrop">
+    <div class="preview-modal-card">
+      <div class="preview-modal-header">
+        <h4 id="previewModalTitle">Look Inside</h4>
+        <button class="cart-close-btn" id="previewModalClose" aria-label="Close preview">&times;</button>
+      </div>
+      <div class="preview-modal-body">
+        <img src="" alt="Look Inside Preview" id="previewModalImage">
+      </div>
+      <div class="preview-modal-footer">
+        <span style="font-size: 0.8rem; color: var(--c-text-muted);">High-resolution PDF &amp; GoodNotes hyperlinked
+          preview</span>
+        <button class="btn-pill btn-pill-blush" style="padding: 8px 20px; font-size: 0.75rem;"
+          onclick="document.getElementById('previewModalClose').click(); openCart();">
+          ADD TO BAG
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    <span class="toast-badge">✓</span>
+    <span class="toast-text">Item updated successfully</span>
+  </div>
+
+  <!-- Instant Custom Toggle Fallback (Works immediately even before external script finishes loading) -->
+  <script>
+    function toggleCustomOption(itemEl, event) {
+      if (event) {
+        if (event.type === 'keydown' && event.key !== 'Enter' && event.key !== ' ') return;
+        if (event.type === 'keydown') event.preventDefault();
+      }
+      if (!itemEl) return;
+      const input = itemEl.querySelector('.custom-check-input');
+      if (!input) return;
+      input.checked = !input.checked;
+      if (window.syncCustomOptionState) {
+        window.syncCustomOptionState(itemEl, input.checked);
+      } else {
+        // Fallback sync
+        const box = itemEl.querySelector('.custom-check-box');
+        const svg = box ? box.querySelector('svg') : null;
+        itemEl.setAttribute('aria-checked', input.checked ? 'true' : 'false');
+        if (input.checked) {
+          itemEl.classList.add('is-checked');
+          itemEl.style.setProperty('background', '#FFFFFF', 'important');
+          itemEl.style.setProperty('border-color', '#D89597', 'important');
+          itemEl.style.setProperty('border-width', '2px', 'important');
+          itemEl.style.setProperty('box-shadow', '0 4px 16px rgba(216, 149, 151, 0.26)', 'important');
+          if (box) {
+            box.style.setProperty('background', '#D89597', 'important');
+            box.style.setProperty('border-color', '#D89597', 'important');
+          }
+          if (svg) {
+            svg.style.setProperty('display', 'block', 'important');
+            svg.style.setProperty('opacity', '1', 'important');
+            svg.style.setProperty('visibility', 'visible', 'important');
+            svg.style.setProperty('stroke', '#FFFFFF', 'important');
+          }
+        } else {
+          itemEl.classList.remove('is-checked');
+          itemEl.style.setProperty('background', '#FAF7F2', 'important');
+          itemEl.style.setProperty('border-color', '#E2D9D0', 'important');
+          itemEl.style.setProperty('border-width', '1.5px', 'important');
+          itemEl.style.setProperty('box-shadow', 'none', 'important');
+          if (box) {
+            box.style.setProperty('background', '#FFFFFF', 'important');
+            box.style.setProperty('border-color', '#5C4A3E', 'important');
+          }
+          if (svg) {
+            svg.style.setProperty('display', 'none', 'important');
+            svg.style.setProperty('opacity', '0', 'important');
+            svg.style.setProperty('visibility', 'hidden', 'important');
+          }
+        }
+      }
+      if (input.id === 'checkNeedOther') {
+        const wrap = document.getElementById('otherNeedWrap');
+        if (wrap) wrap.style.display = input.checked ? 'block' : 'none';
+      }
+      if (input.id === 'checkStyleCustom') {
+        const wrap = document.getElementById('otherStyleWrap');
+        if (wrap) wrap.style.display = input.checked ? 'block' : 'none';
+      }
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+  </script>
+
+  <!-- Client Script -->
+  <script src="script.js?v=8"></script>
+</body>
+
+</html>
